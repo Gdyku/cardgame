@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 
-body {
+.game {
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: repeat(1, 7rem);
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(2, 4rem);
-    grid-template-rows: 7rem 2rem 7rem;
     gap: .5rem;
     cursor: pointer;
     justify-content: center;
@@ -34,6 +34,7 @@ body {
 }
 
 .text{
+    margin-top: 1rem;
     grid-column: span 2;
     display: flex;
     justify-content: center;
@@ -41,9 +42,10 @@ body {
 }
 
 .card {
+    margin-left: 10px;
     position: relative;
-    height: 100%;
-    width:  100%;
+    height: 112px;
+    width:  64px;
     padding: 5px;
     border: 1px solid black;
     border-radius: .5rem;
@@ -52,15 +54,6 @@ body {
     font-size: 4rem;
 }
 
-.flex-item {
-    margin-top: 10px;
-    line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-  }
-
 .container{
     display: flex;
     flex-flow: row;
@@ -68,6 +61,7 @@ body {
     padding: 0;
     margin: 0;
     list-style: none;
+    justify-content: space-between;
 }
 
 .card.red {
